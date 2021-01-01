@@ -1,0 +1,23 @@
+README for MakeParallel
+=======================
+
+Make segments of ways parallel to each other.
+
+In order to use this plugin you need to select four nodes
+- the first node marks the beginning of the source segment
+- the second node marks the beginnging of the destination segment
+- the third node marks the end of the source segment
+- the fourth node marks the end of the destination segment
+
+- first and third node should be part of the same way and can't be part of
+  multiple ways
+- idem for second and forth node
+
+- nodes will be added or removed from the destination segment to match the
+  number off nodes in the source segment
+- plugin will abort if the removed nodes have tags or are part of multiple ways
+
+
+* Plugin author: JJWW
+* The license for plugin is "GPL v3 or later"
+    

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+** This is a template build file for a JOSM  plugin.
+**
+** Maintaining versions
+** ====================
+** See README.template
+**
+** Usage
+** =====
+** Call "ant help" to get possible build targets.
+**
+-->
+<project name="MakeParallel" default="dist" basedir=".">
+
+    <!-- enter the SVN commit message -->
+    <property name="commit.message" value="First commit"/>
+    <!-- enter the *lowest* JOSM version this plugin is currently compatible with -->
+    <!-- <property name="plugin.main.version" value="10580"/> -->
+    <property name="plugin.main.version" value="17329"/>
+
+    <!-- Configure these properties (replace "..." accordingly).
+         See https://josm.openstreetmap.de/wiki/DevelopersGuide/DevelopingPlugins
+    -->
+    <property name="plugin.author" value="JJWW"/>
+    <property name="plugin.version" value="v0.1"/>
+    <property name="plugin.class" value="org.openstreetmap.josm.plugins.makeparallel.MakeParallelPlugin"/>
+    <property name="plugin.description" value="Make segments of a way Parallel to each other"/>
+    <property name="plugin.icon" value="images/dialogs/logo-makeparallel.png"/>
+    <property name="plugin.link" value="https://github.com/JJWW-osm/josm-makeparallel"/>
+    <!-- <property name="plugin.link" value="https://wiki.openstreetmap.org/wiki/JOSM/Plugins/MakeParallel"/> -->
+    <!--<property name="plugin.early" value="..."/>-->
+    <!--<property name="plugin.requires" value="..."/>-->
+    <!--<property name="plugin.stage" value="..."/>-->
+    <property name="plugin.canloadatruntime" value="true"/>
+
+    <!-- ** include targets that all plugins have in common ** -->
+    <import file="../build-common.xml"/>
+  
+</project>

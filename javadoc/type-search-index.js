@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"org.openstreetmap.josm.plugins.makeparallel.actions","l":"MakeParallelAction"},{"p":"org.openstreetmap.josm.plugins.makeparallel","l":"MakeParallelPlugin"}]

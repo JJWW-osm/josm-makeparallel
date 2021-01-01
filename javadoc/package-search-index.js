@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"org.openstreetmap.josm.plugins.makeparallel"},{"l":"org.openstreetmap.josm.plugins.makeparallel.actions"}]
