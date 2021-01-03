@@ -18,12 +18,12 @@
     <!-- enter the *lowest* JOSM version this plugin is currently compatible with -->
     <!-- <property name="plugin.main.version" value="10580"/> -->
     <property name="plugin.main.version" value="17329"/>
-
+    <property name="plugin.version" value="v1.0.1"/>
+    <property name="plugin.date" value="v1.0.1"/>
     <!-- Configure these properties (replace "..." accordingly).
          See https://josm.openstreetmap.de/wiki/DevelopersGuide/DevelopingPlugins
     -->
     <property name="plugin.author" value="JJWW"/>
-    <property name="plugin.version" value="v0.1"/>
     <property name="plugin.class" value="org.openstreetmap.josm.plugins.makeparallel.MakeParallelPlugin"/>
     <property name="plugin.description" value="Make segments of a way Parallel to each other"/>
     <property name="plugin.icon" value="images/dialogs/logo-makeparallel.png"/>
@@ -37,4 +37,6 @@
     <!-- ** include targets that all plugins have in common ** -->
     <import file="../build-common.xml"/>
   
+
+
 </project>
