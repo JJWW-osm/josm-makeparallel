@@ -26,7 +26,7 @@
     <property name="plugin.class" value="org.openstreetmap.josm.plugins.makeparallel.MakeParallelPlugin"/>
     <property name="plugin.description" value="Make segments of a way Parallel to each other"/>
     <property name="plugin.icon" value="images/dialogs/logo-makeparallel.png"/>
-    <property name="plugin.link" value="https://github.com/JJWW-osm/josm-makeparallel"/>
+    <property name="plugin.link" value="https://github.com/JJWW-osm/josm-makeparallel/wiki"/>
     <!-- <property name="plugin.link" value="https://wiki.openstreetmap.org/wiki/JOSM/Plugins/MakeParallel"/> -->
     <!--<property name="plugin.early" value="..."/>-->
     <!--<property name="plugin.requires" value="..."/>-->
