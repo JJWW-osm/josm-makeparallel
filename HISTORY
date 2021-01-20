@@ -1,0 +1,6 @@
+
+v1.1.0
+- Improved algorithm determining if destination segment is left or right from source
+
+v1.0.2 
+- Initial release
