@@ -270,24 +270,18 @@ public class MakeParallelAction extends JosmAction {
     // Get our distance d
     double d1 = s1.get(0).getEastNorth().distance( s2.get(0).getEastNorth() );
 
-    double heading_s1 = s1.get(0).getEastNorth().heading(s1.get(1).getEastNorth());
-    double heading_to_s2 = s1.get(0).getEastNorth().heading(s2.get(0).getEastNorth());
-    //Logging.warn("makeparallel: heading_s1=" + heading_s1);
-    //Logging.warn("makeparallel: heading_s2=" + heading_to_s2);
-    
+    // determine if destination point c is left or right from line through point a and b
+    // public bool isLeft(Point a, Point b, Point c) {  return ((b.X - a.X)*(c.Y - a.Y) - (b.Y - a.Y)*(c.X - a.X)) > 0; }
+    EastNorth a = s1.get(0).getEastNorth();
+    EastNorth b = s1.get(1).getEastNorth();
+    EastNorth c = s2.get(0).getEastNorth();
+   
     int factor;
-    double left =  heading_to_s2 - heading_s1;
-    double right =  heading_s1 - heading_to_s2;
-    if (left < 0)  left  += PI;
-    if (right < 0) right += PI;
-    //Logging.warn("makeparallel: left=" + left);
-    //Logging.warn("makeparallel: right=" + right);
-
-    if (left < right) {
-     factor = -1;
+    if ( ((b.getX() - a.getX()) * (c.getY() - a.getY()) - (b.getY() - a.getY()) * (c.getX() - a.getX() )) > 0) { 
+     factor = 1;
     }
     else {
-     factor = 1;
+     factor = -1;
     }
 
     //Logging.warn("makeparallel: factor=" + factor);
